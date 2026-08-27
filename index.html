@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Practice App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f4f4f4;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        button {
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Welcome to My DevOps App</h1>
+        <p>Practicing Docker and Kubernetes 🚀</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="msg"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("msg").innerHTML =
+                "Hello from Docker Container!";
+        }
+    </script>
+</body>
+</html>
